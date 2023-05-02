@@ -1,0 +1,64 @@
+/* Set the background color to a light blue */
+body {
+    background-color: #b3e5fc;
+  }
+  
+  /* Add a serif font for the headings */
+  h1, h2, h3 {
+    font-family: Georgia, 'Times New Roman', serif;
+  }
+  
+  /* Style links to look like ocean waves */
+  a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #00bcd4;
+    border-radius: 20px;
+    color: #fff;
+    text-decoration: none;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+  }
+  
+  a:hover {
+    transform: translateY(-2px);
+    box-shadow: 4px 4px 4px rgba(0,0,0,0.2);
+  }
+  
+  /* Add images of the ocean and beach throughout the page */
+  img {
+    max-width: 100%;
+    height: auto;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+  }
+  
+  /* Style form inputs to look like ocean waves */
+  input[type="text"], input[type="email"], textarea {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    font-family: Georgia, 'Times New Roman', serif;
+    background-color: #b3e5fc;
+  }
+  
+  input[type="submit"] {
+    background-color: #00bcd4;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #0097a7;
+    transform: translateY(-2px);
+    box-shadow: 4px 4px 4px rgba(0,0,0,0.2);
+  }
+  
