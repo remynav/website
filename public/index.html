@@ -40,91 +40,29 @@
     </footer>
     <!DOCTYPE html>
 
-<head>
-    <title>Change CSS on Button Click</title>
-    <link id="style" rel="stylesheet" type="text/css" href="default.css">
-    <link rel="stylesheet" href="style2.css">
-
-    <style>
-      /* Paste the CSS code here */
-      /* Set the background color to a bright pink */
-body {
-    background-color: #ff69b4;
-  }
-  
-  /* Add a playful font for the headings */
-  h1, h2, h3 {
-    font-family: 'Comic Sans MS', cursive, sans-serif;
-  }
-  
-  /* Style links to look like candy buttons */
-  a {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #ffcc80;
-    border-radius: 20px;
-    color: #fff;
-    text-decoration: none;
-    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
-    transition: all 0.3s ease;
-  }
-  
-  a:hover {
-    transform: scale(1.1);
-    background-color: #ffa726;
-  }
-  
-  /* Add images of sweets and treats throughout the page */
-  img {
-    max-width: 100%;
-    height: auto;
-    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
-  }
-  
-  /* Style form inputs to look like candy */
-  input[type="text"], input[type="email"], textarea {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border-radius: 20px;
-    border: none;
-    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
-    font-family: 'Comic Sans MS', cursive, sans-serif;
-  }
-  
-  input[type="submit"] {
-    background-color: #ffa726;
-    color: #fff;
-    border: none;
-    border-radius: 20px;
-    padding: 10px 20px;
-    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
-    cursor: pointer;
-    transition: all 0.3s ease;
-  }
-  
-  input[type="submit"]:hover {
-    background-color: #ffcc80;
-    transform: scale(1.1);
-  }
-  
-      </style>
-      
-</head>
-  
-
-<body>
-    <h1>Hello World!</h1>
-    <button onclick="changeCSS('style1.css')">Style 1</button>
-    <button onclick="changeCSS('style2.css')">Style 2</button>
-
-    <script>
-        function changeCSS(cssFile) {
-            document.getElementById('style').setAttribute('href', cssFile);
+    <head>
+      <title>Change Stylesheet</title>
+      <!-- Link to default stylesheet -->
+      <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+      <h1>Change Stylesheet</h1>
+      <p>Click the buttons below to change the stylesheet:</p>
+      <button onclick="changeToStylesheet1()">Stylesheet 1</button>
+      <button onclick="changeToStylesheet2()">Stylesheet 2</button>
+      <script>
+        // Function to change to stylesheet 1
+        function changeToStylesheet1() {
+          document.getElementsByTagName("link")[0].href = "style1.css";
         }
-    </script>
-</body>
+  
+        // Function to change to stylesheet 2
+        function changeToStylesheet2() {
+          document.getElementsByTagName("link")[0].href = "style2.css";
+        }
+      </script>
+    </body>
+
 
 
   </body>
