@@ -54,6 +54,8 @@
         // Function to change to stylesheet 1
         function changeToStylesheet1() {
           document.getElementsByTagName("link")[0].href = "style1.css";
+          var css= document.getElementById("css");
+          css.setAttribute("href", 'style1.css');
         }
   
         // Function to change to stylesheet 2
