@@ -38,5 +38,24 @@
     <footer>
       <p>&copy; 2023 My First Website</p>
     </footer>
+    <!DOCTYPE html>
+
+<head>
+    <title>Change CSS on Button Click</title>
+    <link id="style" rel="stylesheet" type="text/css" href="default.css">
+</head>
+<body>
+    <h1>Hello World!</h1>
+    <button onclick="changeCSS('style1.css')">Style 1</button>
+    <button onclick="changeCSS('style2.css')">Style 2</button>
+
+    <script>
+        function changeCSS(cssFile) {
+            document.getElementById('style').setAttribute('href', cssFile);
+        }
+    </script>
+</body>
+
+
   </body>
 </html>
